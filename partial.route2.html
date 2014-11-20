@@ -1,1 +1,12 @@
-<h1>Route 2</h1>
+<h1>Notes</h1>
+<div>
+        <textarea ng-model="notes"></textarea>
+        <input type="submit" value="Add"  ng-click="modifySomeNotes()"/>
+    </div>
+<div ng-show="factoryNotes">
+    <h1>Notes about this App</h1>
+    {{factoryNotes}}
+    <p>
+        <a href="" ng-click="removeNotes()">Remove this Note</a>
+    </p>
+</div>

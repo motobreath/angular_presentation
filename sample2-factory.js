@@ -36,9 +36,11 @@ angular.module('todoApp', [])
                     Notes.removeNotes();
                 }
 
-            }]).controller("additionalController", ["$scope", "Notes", function ($scope, Notes) {
-        $scope.modifySomeNotes = function () {
-            Notes.updateNotes($scope.notes);
-            $scope.notes = "";
-        }
+            }])
+            //Updated controller that calles Notes service factory instead
+            .controller("additionalController", ["$scope", "Notes", function ($scope, Notes) {
+                $scope.modifySomeNotes = function () {
+                Notes.updateNotes($scope.notes);
+                $scope.notes = "";
+            }
     }]);

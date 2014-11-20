@@ -25,12 +25,13 @@ angular.module('todoApp', [])
                             $scope.todos.push(todo);
                     });
                 };
-            }]);
+            }]); //add .controller code here
+        
 
 /*
  .controller("additionalController",function($scope){
- $scope.modifySomeNotes=function(){
- alert("Do something with the note:" + $scope.notes)
- }
- })
+            $scope.modifySomeNotes=function(){
+                alert("Do something with the note:" + $scope.notes)
+            }
+        });
  */
