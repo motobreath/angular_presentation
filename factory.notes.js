@@ -1,4 +1,4 @@
-angular.module("todoApp").factory("Notes",function(){
+angular.module("todoApp").factory("some factory",fucntion(){
 	var notes="";
 	return {
 		updateNotes:function(notes){
@@ -11,4 +11,8 @@ angular.module("todoApp").factory("Notes",function(){
 			this.notes="";
 		}
 	}
+})	
+	
 })
+
+angular.module("someOther",["some factory"])

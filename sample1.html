@@ -12,6 +12,10 @@
             <hr>
             <h1 ng-show="yourName">Hello {{yourName}}!</h1>
             <!-- insert yourCity data here-->
+            <label>City:</label>
+<input type="text" ng-model="yourCity" placeholder="What city are you from?" />
+
+<p ng-show="yourCity">I see you are from {{yourCity}}</p>
         </div>
     </body>
 </html>
